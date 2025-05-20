@@ -1,0 +1,233 @@
+/* Nama   : Muhammad Alwi Marom, 
+     NIM    : 24.12.3368, 
+     Kelas  : SI 05, 
+     Tanggal: 19 Mei 2025 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    background: linear-gradient(135deg, #294172, #2a5298);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 40px;
+    color: rgb(241, 241, 235);
+}
+
+/* Navigation */
+nav {
+    background-color: #4978ca;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: rgb(228, 229, 236);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0808;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 20px;
+    border: 6px solid black;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background: #d3d3d3;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #000;
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-text p {
+    margin-bottom: 1rem;
+}
+
+/* Education and Skills */
+.section {
+    margin: 2rem 0;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #196c9c;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;   
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #2a5298;
+    color: white;
+}
+
+/* Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    background: #d3d3d3;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.video-container::before {
+    content: '▶'; /* Play button icon */
+    font-size: 50px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    background: #d3d3d3;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Media */
+.social-media {
+    margin: 2rem 0;
+    background: #d3d3d3;
+    padding: 1.5rem;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.social-media a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #196c9c;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    background: #d3d3d3;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+}
